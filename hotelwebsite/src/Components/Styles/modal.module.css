@@ -1,0 +1,109 @@
+:root{
+  ---color1: #69353F;
+  ---color2: #D4F2DB;
+}
+.modals {
+	position: fixed;
+	z-index: 2;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.59);
+	backdrop-filter: blur(3px);
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+.modalBox{
+	width: 40%;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	padding: 2rem;
+	border-radius: 20px;
+	background-color: white;
+	animation-name: fade-in;
+	animation-duration: 3s;
+	text-align: center;
+	border-top: var(---color1) 7px solid;
+	box-shadow: black 2px 1px 1px;
+}
+@keyframes fade-in {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+.link{
+	background-color: var(---color1);
+	padding: 0.2rem;
+	border: none;
+	border-radius: 12px;
+	cursor: pointer;
+	height: 2.5rem;
+	font-size: 1rem;
+	color: white;
+&:hover{
+	transform: scale(1.05);
+}
+}
+.cancel{
+	background-color: transparent;
+	color: gray;
+	cursor: pointer;
+	font-style: italic;
+	border: none;
+&:hover{
+	text-decoration: underline;
+}
+}
+.text, .heading{
+	font-style: oblique;
+}
+.mini{
+	color: var(---color1);
+}
+img{
+	margin-left: 150px;
+}
+
+/* responsiveness */
+@media (max-width: 1024px) {
+	.modalBox {
+		width: 60%;
+	}
+	img {
+		margin-left: 100px;
+	}
+}
+@media (max-width: 768px) {
+	.modalBox {
+		width: 75%;
+		padding: 1.5rem;
+	}
+	img {
+		margin-left: 0;
+		max-width: 100%;
+		height: auto;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+@media (max-width: 480px) {
+	.modalBox {
+		width: 90%;
+		padding: 1rem;
+		border-radius: 12px;
+		gap: 0.4rem;
+	}
+	.link {
+		font-size: 0.9rem;
+		height: 2.2rem;
+	}
+	.text, .heading {
+		font-size: 0.95rem;
+	}
+}
