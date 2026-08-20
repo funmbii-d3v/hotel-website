@@ -4,10 +4,10 @@
 }
 .modals {
 	position: fixed;
-	z-index: 2;
+	z-index: 46;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.59);
+	background-color: rgba(0, 0, 0, 0.588);
 	backdrop-filter: blur(3px);
 	align-items: center;
 	justify-content: center;
@@ -15,7 +15,7 @@
 }
 .modalBox{
 	width: 40%;
-	position: relative;
+	position: fixed;
 	display: flex;
 	flex-direction: column;
 	gap: 0.5rem;
@@ -65,7 +65,7 @@
 .mini{
 	color: var(---color1);
 }
-img{
+.img{
 	margin-left: 150px;
 }
 

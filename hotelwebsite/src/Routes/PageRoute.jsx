@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link, Route, Routes } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer.jsx'
 import Home from "../Pages/Home.jsx"
 import Rooms from "../Pages/Rooms.jsx"
-
 const PageRoute = () => {
   return (
     <>
@@ -12,6 +12,7 @@ const PageRoute = () => {
         <Route path="/" element={<Home/>} />
         <Route path="/rooms" element={<Rooms/>} />
       </Routes>
+      <Footer />
     </>
   )
 }

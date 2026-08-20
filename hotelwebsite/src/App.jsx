@@ -8,6 +8,7 @@ const App = () => {
   const navigate = useNavigate()
 
   const toggleModal = () => {
+    console.log('before:', isOpen)
     setisOpen(!isOpen)
   }
   const goToRooms = () => {
@@ -17,11 +18,10 @@ const App = () => {
 
   return (
     <div className='body'>
-      <PageRoute/>
       {isOpen &&(
         <div className={styles.modals}>
           <div className={styles.modalBox}>
-            <img src={"/Assets/image/Logo.png"} alt="hotel logo" height={150} width={150} />
+            <img src={"/Assets/image/Logo.png"} alt="hotel logo" height={150} width={150} className={styles.img}/>
             <h1 className={styles.heading}>Hello, customer!</h1>
             <h2 className={styles.text}>Welcome to L'Hòtel</h2>
             <p className={styles.mini}>—home away from home✨</p>
@@ -31,6 +31,7 @@ const App = () => {
           </div>
         </div>
       )}
+      <PageRoute/>
     </div>
   )
 }

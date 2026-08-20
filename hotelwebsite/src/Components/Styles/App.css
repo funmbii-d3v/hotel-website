@@ -8,4 +8,95 @@
 :root{
   ---color1: #69353F;
   ---font1: "Lato", sans-serif;
+  ---color2: #D4F2DB;
+}
+.footer{
+  background-color: var(---color1);
+  display: flex;
+  color: white;
+  gap: 7rem;
+  height: 65vh;
+  padding: 2.5rem;
+}
+.form{
+  width: 350px;
+h2{
+  margin-bottom: 15px;
+}
+input{
+  border: none;
+  width: 300px;
+  height: 25px;
+  background-color: transparent;
+  border-bottom: black 1.5px solid;
+}
+.sub{
+  padding: 8px;
+  border-radius: 12px;
+  margin-left: 235px;
+  margin-top: 12px;
+  border: none;
+  cursor: pointer;
+  background-color: white;
+}
+}
+.footLinks{
+  display: flex;
+  flex-direction: column;
+}
+.Link{
+  text-decoration: none;
+  color: white;
+&:hover{
+  color: var(---color2);
+  text-decoration: underline;
+}
+}
+
+/* --- responsiveness--- */
+@media (max-width: 1024px) {
+  .footer{
+    gap: 3rem;
+    height: auto;
+    flex-wrap: wrap;
+  }
+  .form{
+    width: 300px;
+  }
+  .form input{
+    width: 250px;
+  }
+  .form .sub{
+    margin-left: 185px;
+  }
+}
+@media (max-width: 768px) {
+  .footer{
+    flex-direction: column;
+    gap: 2rem;
+    height: auto;
+    padding: 2rem 1.5rem;
+  }
+  .form{
+    width: 100%;
+  }
+  .form input{
+    width: 100%;
+    max-width: 300px;
+  }
+  .form .sub{
+    margin-left: 0;
+    display: block;
+  }
+}
+@media (max-width: 480px) {
+  .footer{
+    padding: 1.5rem 1rem;
+  }
+  .form h2{
+    font-size: 1.2rem;
+  }
+  .form input{
+    max-width: 100%;
+  }
 }
