@@ -20,6 +20,8 @@
 }
 .form{
   width: 350px;
+  position: relative;
+  margin-bottom: 20px;
 h2{
   margin-bottom: 15px;
 }
@@ -29,15 +31,23 @@ input{
   height: 25px;
   background-color: transparent;
   border-bottom: black 1.5px solid;
+  margin-bottom: 20px;
 }
 .sub{
-  padding: 8px;
-  border-radius: 12px;
-  margin-left: 235px;
-  margin-top: 12px;
+  position: absolute;
+  right: 53px;
+  top: 20%;
+  transform: translateY(-50%);
+  background: none;
   border: none;
   cursor: pointer;
-  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px 6px;
 }
 }
 .footLinks{
@@ -67,7 +77,7 @@ input{
     width: 250px;
   }
   .form .sub{
-    margin-left: 185px;
+    font-size: 1.3rem;
   }
 }
 @media (max-width: 768px) {
@@ -87,6 +97,12 @@ input{
   .form .sub{
     margin-left: 0;
     display: block;
+    left: 3px;
+    font-size: 1.2rem;
+  }
+  img{
+    margin-left: 0;
+    max-width: 100%;
   }
 }
 @media (max-width: 480px) {
@@ -98,5 +114,8 @@ input{
   }
   .form input{
     max-width: 100%;
+  }
+  .sub{
+    font-size: 1.1rem;
   }
 }

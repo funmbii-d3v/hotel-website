@@ -13,7 +13,7 @@ const Footer = () => {
           <h2>Stay in the know</h2>
           <form onSubmit={submitBtn}>
             <input type="email" placeholder='Email' value={email} onChange={(e)=> setEmail(e.target.value)}required/>
-            <button type="submit" className='sub'>Okay!</button>
+            <button type="submit" className='sub'>→</button>
           </form>
           <p>By entering your email, you agree to receive email marketing from us at your email address and agree to the Terms and Privacy Policy.</p>
           <img src={"/Assets/image/Logo.png"} alt="logo" height={80}/>
@@ -30,6 +30,18 @@ const Footer = () => {
           <p>Reach out</p>
           <p>Damages</p>
           <p>Sponsorship</p>
+        </div>
+        <div>
+          <h3>Socials</h3>
+          <p>Instagram</p>
+          <p>Pinterest</p>
+          <p>Tiktok</p>
+          <p>Snapchat</p>
+        </div>
+        <div>
+          <h3>L'Hotel</h3>
+          <p>About Us</p>
+          <p>Contact Us</p>
         </div>
     </footer>
   )
