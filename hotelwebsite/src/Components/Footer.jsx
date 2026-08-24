@@ -23,6 +23,8 @@ const Footer = () => {
           <h3>Quick Links</h3>
           <Link to={"/"} className='Link'>Home</Link>
           <Link to={"/rooms"} className='Link'>Rooms</Link>
+          <Link to={"/details"} className='Link'>Details</Link>
+          <Link to={"/booking"} className='Link'>Booking</Link>
         </div>
         <div>
           <h3>Support</h3>
