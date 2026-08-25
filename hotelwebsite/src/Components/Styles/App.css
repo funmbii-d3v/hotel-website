@@ -10,7 +10,7 @@
   ---font1: "Lato", sans-serif;
   ---color2: #D4F2DB;
 }
-
+/* navbar */
 .NavBarItems{
   background-color: var(---color1);
   color: white;
@@ -67,6 +67,17 @@ body{
 
 }
 
+/* home page */
+.heroPg{
+  height: 60vh;
+  background: url(/hotelwebsite/public/Assets/image/hero1.jpg) no-repeat center/cover;
+  background-attachment: fixed;
+  animation: bg 3s ease infinite;
+/* @keyframes bg {
+  
+} */
+}
+/* footer */
 .footer{
   background-color: var(---color1);
   display: flex;
@@ -161,6 +172,7 @@ input{
   img{
     margin-left: 0;
     max-width: 100%;
+    height: 70px;
   }
 
 }
