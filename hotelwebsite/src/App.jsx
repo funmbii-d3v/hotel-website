@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import PageRoute from './Routes/PageRoute'
 import "./Components/Styles/App.css"
 import styles from './Components/Styles/modal.module.css'
+import BackToTop from './Components/BackToTop'
 const App = () => {
   const [isOpen, setisOpen] = useState(true)
   const navigate = useNavigate()
@@ -32,6 +33,7 @@ const App = () => {
         </div>
       )}
       <PageRoute/>
+      <BackToTop/>
     </div>
   )
 }
