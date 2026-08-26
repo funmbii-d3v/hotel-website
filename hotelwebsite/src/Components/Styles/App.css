@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&display=swap');
 *{
   padding: 0;
   margin: 0;
@@ -7,75 +7,205 @@
 }
 :root{
   ---color1: #69353F;
-  ---font1: "Lato", sans-serif;
+  ---font1: "Merienda", cursive;
   ---color2: #D4F2DB;
 }
 /* navbar */
 .NavBarItems{
-  background-color: var(---color1);
-  color: white;
+ font-size: 1.3rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+  background-color: transparent;
+  transition: background-color 0.3s ease
+}
+.NavList{
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  padding: .4rem 2rem;
-  /* margin:  0 auto; */
+  padding: .2rem 1rem;
   font-family: var(---font1);
-  /* position: fixed; */
-  width: 100vw;
- /* z-index: 99; */
- font-size: 1.3rem;
-   position: fixed;
-  top: 0;
-  z-index: 999;
-  backdrop-filter: saturate(1.2) blur(10px);
-    background: #69353fe3;
+h1{
+  text-transform: uppercase;
 }
-
+}
+.NavBarItems.scrolled{
+  background-color: var(---color2);
+}
 .subNav{
   display:  flex;
   gap: 2px;
 }
-
 .NavName{
   margin-top: 0.8rem;
   text-decoration: none;
-  color: white;
+  color: var(---color1);
  }
-
-
-body{
-  position: relative;
-}
 .NavLink{
   text-decoration: none;
-  color: white;
+  color: var(---color1);
   margin-top: 1.5rem;
   font-weight: lighter;
   margin-right: 2.5rem;
 &:hover{
-  color: var(---color2);
+  color: black;
   text-decoration: underline;
 }
 }
 .navBut{
   padding: .5rem;
-  border: 1px solid;
+  border: none;
   border-radius: .5rem;
   background-color: var(---color1);
   color: white;
   cursor: pointer;
-
+  &:hover{
+  transform: scale(1.25);
+}
 }
 
 /* home page */
 .heroPg{
-  height: 60vh;
-  background: url(/hotelwebsite/public/Assets/image/hero1.jpg) no-repeat center/cover;
-  background-attachment: fixed;
-  animation: bg 3s ease infinite;
-/* @keyframes bg {
+  height: 90vh;
+  width: 100%;
+  object-fit: cover;
+}
+.hero{
+  position: relative;
+}
+.stars{
+  color: gold;
+}
+.heroContent{
+  position: absolute;
+  z-index: 2;
+  top: 40%;
+  left: 23%;
+  text-align: center;
+  color: white;
+  width: 90%;
+  max-width: 700px;
+h1{
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+}
+.desc{
+  display: flex;
+  text-align: center;
+  gap: 3rem;
+  padding: 2rem 3rem;
   
-} */
+  h3{
+    margin-bottom: 12px;
+  }
+}
+.icon{
+  color: var(---color1);
+  font-size: 1.67rem;
+  margin-bottom: 8px;
+  &:hover{
+    transform: scale(1.23);
+  }
+}
+.wlcm{
+  display: flex;
+  padding: 1.75rem 2.5rem;
+  gap: 1.5rem;
+img{
+  height: 350px;
+  width: 300px;
+}
+.scnd{
+  margin-top: 30px;
+}
+}
+.imgCon{
+  display: flex;
+  gap: 1.2rem;
+}
+.side{
+  padding: 1.8rem;
+  width: 90%;
+  max-width: 450px;
+p{
+  line-height: 1.5rem;
+}
+}
+.ttl{
+  color: var(---color1);
+  text-transform: uppercase;
+  margin-bottom: 9px;
+}
+.aboutbtn{
+  background-color: var(---color1);
+  color: white;
+  border-radius: 0.5rem;
+  padding: .5rem;
+  border: none;
+  margin-top: 15px;
+  cursor: pointer;
+&:hover{
+  transform: scale(1.25);
+}
+}
+.h1{
+  padding: 1rem 8rem;
+  color: var(---color1);
+}
+.approach{
+  display: flex;
+  padding: 2rem 8rem;
+  gap: 3.5rem;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.appBox{
+  background-color: var(---color2);
+  padding: 2rem 1.5rem;
+  width: 80%;
+  max-width: 200px;
+}
+.map{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  background-color: var(---color1);
+  padding: 3rem 8rem;
+}
+.info{
+  width: 100%;
+  max-width: 450px;
+  color: white;
+h4{
+  color: var(---color2);
+}
+}
+.lcT iframe{
+  width: 450px;
+  height: 175px;
+  border: none;
+}
+.line{
+  background-color: var(---color2);
+  height: 20px;
+}
+/* rooms page */
+.roomsImg{
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+.hero::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.586);
+  z-index: 1;
 }
 /* footer */
 .footer{
@@ -130,9 +260,39 @@ input{
   text-decoration: underline;
 }
 }
+.topbtn{
+  font-size: 1.5rem;
+  border: none;
+  background-color: var(---color2);
+  cursor: pointer;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 50%;
+  padding: 10px;
+  height: 50px;
+  z-index: 99;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  animation: bounce 2s infinite ease-in-out
+}
+  @keyframes bounce {
+    0%, 10%, 90%{
+      transform: translateY(0);
+    }
+    30%{
+      transform: translateY(-40px);
+    }
+  }
 
 /* --- responsiveness--- */
 @media (max-width: 1024px) {
+  /* home */
+  .heroContent{
+    width: 80%;
+    max-width: 600px;
+  }
+  /* footer */
   .footer{
     gap: 3rem;
     height: auto;
@@ -150,6 +310,30 @@ input{
   
 }
 @media (max-width: 768px) {
+  /* home page */
+  .heroContent{
+    width: 60%;
+  }
+  .desc{
+    justify-content: center;
+  div{
+    width: 90%;
+  }
+  }
+  .wlcm{
+    flex-direction: column;
+  .side{
+    max-width: 600px;
+  }
+  }
+  .h1{
+    padding: 1.5rem;
+  }
+  .approach{
+    padding: 3rem;
+    justify-content: center;
+  }
+  /* footer */
   .footer{
     flex-direction: column;
     gap: 2rem;
@@ -177,6 +361,26 @@ input{
 
 }
 @media (max-width: 480px) {
+  /* home page */
+  .heroContent{
+    max-width: 250px;
+    width: 70%;
+  h1{
+    font-size: 1.85rem;
+  }
+  }
+  .desc{
+    flex-direction: column;
+  }
+  .imgCon{
+    flex-direction: column;
+    padding: 1.8rem;
+  }
+  .approach{
+    padding: 1.1rem;
+    gap: 1.3rem;
+  }
+  /* footer */
   .footer{
     padding: 1.5rem 1rem;
   }

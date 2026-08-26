@@ -1,5 +1,5 @@
-import React from 'react'
-import { Link, Route, Routes } from 'react-router-dom'
+import React, {useEffect, useState,}from 'react'
+import { Route, Routes } from 'react-router-dom'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer.jsx'
 import Home from "../Pages/Home.jsx"
