@@ -28,7 +28,7 @@
   top: 0;
   z-index: 999;
   backdrop-filter: saturate(1.2) blur(10px);
-    background: #69353fe3;
+    background: #69353fb0;
 }
 
 .subNav{
@@ -131,6 +131,223 @@ input{
 }
 }
 
+
+.Maincnt{
+  background-color: white;
+}
+.container1{
+  border-color: #69353F;
+  width: 100%;
+  height: 550px;
+  border-bottom: 7%;
+  margin-top: 70px;
+  display: block;
+ padding-top: 180px;
+  justify-content: center;
+  text-align: center;
+  background-image: url(../../assets/image/bedlaying.jpg);
+  background-size: cover;
+  opacity: 0.8;
+  
+
+}
+
+.head1{
+  
+  
+  font-size: 40px;
+  color: white;
+
+}
+.btn1{
+  margin-top: 25px;
+  height: 50px;
+  width: 120px;
+  border-radius: 15%;
+  border:  solid 1px white;
+  background-color:#69353F;
+  justify-content: center;
+}
+
+.containers1{
+ 
+  width: 100%;
+  height: 20rem;
+  background-color: #69353F;
+  color: white;
+   display: block;
+ 
+   
+}
+.ctop{
+  padding-top: 1.5rem;
+width: 100%;
+height: 60%; 
+
+ text-align: center;
+
+}
+.cbottom{
+  padding-bottom: 0.5rem;
+width: 100%;
+height: 40%;
+  
+  display: flex;
+  gap: 1rem;
+  padding: 0.3rem;
+  justify-content: center;
+ 
+
+}
+.b1{
+  text-align: center;
+  margin-left: 0.7rem;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+.b2{
+    text-align: center;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+.b3{
+    text-align: center;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+
+.b4{
+    text-align: center;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+.b5{
+    text-align: center;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+.b6{
+    text-align: center;
+  height: 90%;
+  width: 15%;
+  border: solid 2px chocolate;
+}
+.container2{
+border: 2px solid pink;
+  width: 100%;
+  height: 36rem;
+   border-bottom: 7%;
+   display: flex;
+   padding: 8px;
+   gap: 10px;
+   margin-top: 5rem;
+}
+.leftcont1{
+height: 100%;
+width: 35%;
+
+display: block;
+margin-left: 11rem;
+}
+.box1{
+  height: 60%;
+  width: 100%;
+  border: solid 2px sienna;
+  margin-bottom: 1.5rem;
+}
+.box2{
+    height: 33%;
+  width: 80%;
+  border: solid 2px sienna;
+  margin-left: 5rem;
+}
+.box3{
+    height: 49%;
+  width: 90%;
+  border: solid 2px sienna;
+ 
+}
+.box4{
+    height: 49%;
+  width: 90%;
+  border: solid 2px sienna;
+}
+.rightcont1{
+height: 100%;
+width: 35%;
+
+display: block;
+}
+.container3{
+border: 2px solid forestgreen;
+    width: 100%;
+  height: 450px;
+   border-bottom: 7%;
+   display: block;
+}
+.top1{
+width: 100%;
+height: 20%;
+border: solid 2px firebrick;
+
+}
+.bottom1{
+width: 100%;
+height: 70%;
+border: solid 2px hotpink;
+display: flex;
+gap: 0.6rem;
+justify-content: center;
+padding-top: 1rem;
+}
+.c1{
+  
+  height: 90%;
+  width: 21%;
+  border: solid 2px blueviolet;
+
+}
+.c2{
+  height: 90%;
+  width: 21%;
+  border: solid 2px blueviolet;
+
+}
+.c3{
+  height: 90%;
+  width: 21%;
+  border: solid 2px blueviolet;
+
+}
+.c4{
+  height: 90%;
+  width: 21%;
+  border: solid 2px blueviolet;
+
+}
+.c5{
+  height: 90%;
+  width: 21%;
+  border: solid 2px blueviolet;
+
+}
+.container4{
+border: 2px solid khaki;
+    width: 100%;
+  height: 250px;
+   border-bottom: 7%;
+}
+.container5{
+  border: 2px solid blue;
+    width: 100%;
+  height: 250px;
+   border-bottom: 7%;
+}
 /* --- responsiveness--- */
 @media (max-width: 1024px) {
   .footer{
