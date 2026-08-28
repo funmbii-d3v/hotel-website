@@ -1,86 +1,86 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&display=swap');
-*{
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Merienda:wght@300..900&display=swap");
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: var(---font1);
 }
-:root{
-  ---color1: #69353F;
+:root {
+  ---color1: #69353f;
   ---font1: "Merienda", cursive;
-  ---color2: #D4F2DB;
+  ---color2: #d4f2db;
 }
 /* navbar */
-.NavBarItems{
- font-size: 1.3rem;
+.NavBarItems {
+  font-size: 1.3rem;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 9;
   background-color: transparent;
-  transition: background-color 0.3s ease
+  transition: background-color 0.3s ease;
 }
-.NavList{
+.NavList {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
-  padding: .2rem 1rem;
+  padding: 0.2rem 1rem;
   font-family: var(---font1);
   /* position: fixed; */
   width: 100vw;
- /* z-index: 99; */
- font-size: 1.3rem;
-   position: fixed;
+  /* z-index: 99; */
+  font-size: 1.3rem;
+  position: fixed;
   top: 0;
   z-index: 999;
   backdrop-filter: saturate(1.2) blur(10px);
-    background: #69353fe3;
+  background: #69353fe3;
 }
-.subNav{
-  display:  flex;
+.subNav {
+  display: flex;
   gap: 2px;
 }
-.NavName{
+.NavName {
   margin-top: 0.8rem;
   text-decoration: none;
-  color: var(---color1);
- }
-.NavLink{
+  color: white;
+}
+.NavLink {
   text-decoration: none;
-  color: var(---color1);
+  color: white;
   margin-top: 1.5rem;
   font-weight: lighter;
   margin-right: 2.5rem;
-&:hover{
-  color: black;
-  text-decoration: underline;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
 }
-}
-.navBut{
-  padding: .5rem;
+.navBut {
+  padding: 0.5rem;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-color: var(---color1);
   color: white;
   cursor: pointer;
-  &:hover{
-  transform: scale(1.25);
-}
+  &:hover {
+    transform: scale(1.25);
+  }
 }
 
 /* home page */
-.heroPg{
+.heroPg {
   height: 90vh;
   width: 100%;
   object-fit: cover;
 }
-.hero{
+.hero {
   position: relative;
 }
-.stars{
+.stars {
   color: gold;
 }
-.heroContent{
+.heroContent {
   position: absolute;
   z-index: 2;
   top: 40%;
@@ -89,118 +89,118 @@
   color: white;
   width: 90%;
   max-width: 700px;
-h1{
-  font-size: 3rem;
-  text-transform: uppercase;
+  h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
 }
-}
-.desc{
+.desc {
   display: flex;
   text-align: center;
   gap: 3rem;
   padding: 2rem 3rem;
-  
-  h3{
+
+  h3 {
     margin-bottom: 12px;
   }
 }
-.icon{
+.icon {
   color: var(---color1);
   font-size: 1.67rem;
   margin-bottom: 8px;
-  &:hover{
+  &:hover {
     transform: scale(1.23);
   }
 }
-.wlcm{
+.wlcm {
   display: flex;
   padding: 1.75rem 2.5rem;
   gap: 1.5rem;
-img{
-  height: 350px;
-  width: 300px;
+  img {
+    height: 350px;
+    width: 300px;
+  }
+  .scnd {
+    margin-top: 30px;
+  }
 }
-.scnd{
-  margin-top: 30px;
-}
-}
-.imgCon{
+.imgCon {
   display: flex;
   gap: 1.2rem;
 }
-.side{
+.side {
   padding: 1.8rem;
   width: 90%;
   max-width: 450px;
-p{
-  line-height: 1.5rem;
+  p {
+    line-height: 1.5rem;
+  }
 }
-}
-.ttl{
+.ttl {
   color: var(---color1);
   text-transform: uppercase;
   margin-bottom: 9px;
 }
-.aboutbtn{
+.aboutbtn {
   background-color: var(---color1);
   color: white;
   border-radius: 0.5rem;
-  padding: .5rem;
+  padding: 0.5rem;
   border: none;
   margin-top: 15px;
   cursor: pointer;
-&:hover{
-  transform: scale(1.25);
+  &:hover {
+    transform: scale(1.25);
+  }
 }
-}
-.h1{
+.h1 {
   padding: 1rem 8rem;
   color: var(---color1);
 }
-.approach{
+.approach {
   display: flex;
   padding: 2rem 8rem;
   gap: 3.5rem;
   text-align: center;
   flex-wrap: wrap;
 }
-.appBox{
+.appBox {
   background-color: var(---color2);
   padding: 2rem 1.5rem;
   width: 80%;
   max-width: 200px;
 }
-.map{
+.map {
   display: flex;
   flex-wrap: wrap;
   gap: 2.5rem;
   background-color: var(---color1);
   padding: 3rem 8rem;
 }
-.info{
+.info {
   width: 100%;
   max-width: 450px;
   color: white;
-h4{
-  color: var(---color2);
+  h4 {
+    color: var(---color2);
+  }
 }
-}
-.lcT iframe{
+.lcT iframe {
   width: 450px;
   height: 175px;
   border: none;
 }
-.line{
+.line {
   background-color: var(---color2);
   height: 20px;
 }
 /* rooms page */
-.roomsImg{
+.roomsImg {
   width: 100%;
   height: 50vh;
   object-fit: cover;
 }
-.hero::after{
+.hero::after {
   content: "";
   position: absolute;
   top: 0;
@@ -211,7 +211,7 @@ h4{
   z-index: 1;
 }
 /* footer */
-.footer{
+.footer {
   background-color: var(---color1);
   display: flex;
   color: white;
@@ -219,51 +219,51 @@ h4{
   height: 65vh;
   padding: 2.5rem;
 }
-.form{
+.form {
   width: 350px;
   position: relative;
   margin-bottom: 20px;
-h2{
-  margin-bottom: 15px;
+  h2 {
+    margin-bottom: 15px;
+  }
+  input {
+    border: none;
+    width: 300px;
+    height: 25px;
+    background-color: transparent;
+    border-bottom: black 1.5px solid;
+    margin-bottom: 20px;
+  }
+  .sub {
+    position: absolute;
+    right: 53px;
+    top: 20%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    font-size: 1.5rem;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 6px;
+  }
 }
-input{
-  border: none;
-  width: 300px;
-  height: 25px;
-  background-color: transparent;
-  border-bottom: black 1.5px solid;
-  margin-bottom: 20px;
-}
-.sub{
-  position: absolute;
-  right: 53px;
-  top: 20%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  cursor: pointer;
-  color: black;
-  font-size: 1.5rem;
-  line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 4px 6px;
-}
-}
-.footLinks{
+.footLinks {
   display: flex;
   flex-direction: column;
 }
-.Link{
+.Link {
   text-decoration: none;
   color: white;
-&:hover{
-  color: var(---color2);
-  text-decoration: underline;
+  &:hover {
+    color: var(---color2);
+    text-decoration: underline;
+  }
 }
-}
-.topbtn{
+.topbtn {
   font-size: 1.5rem;
   border: none;
   background-color: var(---color2);
@@ -277,340 +277,383 @@ input{
   z-index: 99;
   text-align: center;
   backdrop-filter: blur(10px);
-  animation: bounce 2s infinite ease-in-out
+  animation: bounce 2s infinite ease-in-out;
 }
-  @keyframes bounce {
-    0%, 10%, 90%{
-      transform: translateY(0);
-    }
-    30%{
-      transform: translateY(-40px);
-    }
+@keyframes bounce {
+  0%,
+  10%,
+  90% {
+    transform: translateY(0);
   }
+  30% {
+    transform: translateY(-40px);
+  }
+}
 
-
-.Maincnt{
+.Maincnt {
   background-color: white;
 }
-.container1{
-  border-color: #69353F;
+.container1 {
+  border-color: #69353f;
   width: 100%;
   height: 550px;
   border-bottom: 7%;
   margin-top: 70px;
   display: block;
- padding-top: 180px;
+  padding-top: 180px;
   justify-content: center;
   text-align: center;
   background-image: url(../../assets/image/bedlaying.jpg);
   background-size: cover;
   opacity: 0.8;
-  
-
 }
 
-.head1{
-  
-  
+.head1 {
   font-size: 40px;
   color: white;
-
 }
-.btn1{
+.btn1 {
   margin-top: 25px;
   height: 50px;
   width: 120px;
   border-radius: 15%;
-  border:  solid 1px white;
-  background-color:#69353F;
+  border: solid 1px white;
+  background-color: #69353f;
   justify-content: center;
 }
 
-.containers1{
- 
+.containers1 {
   width: 100%;
   height: 20rem;
-  background-color: #69353F;
+  background-color: #69353f;
   color: white;
-   display: block;
- 
-   
+  display: block;
 }
-.ctop{
+.ctop {
   padding-top: 1.5rem;
-width: 100%;
-height: 60%; 
+  width: 100%;
+  height: 60%;
 
- text-align: center;
-
+  text-align: center;
 }
-.cbottom{
+.cbottom {
   padding-bottom: 0.5rem;
-width: 100%;
-height: 40%;
-  
+  width: 100%;
+  height: 40%;
+
   display: flex;
   gap: 1rem;
   padding: 0.3rem;
   justify-content: center;
- 
-
 }
-.b1{
+.b1 {
   text-align: center;
   margin-left: 0.7rem;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
-.b2{
-    text-align: center;
+.b2 {
+  text-align: center;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
-.b3{
-    text-align: center;
+.b3 {
+  text-align: center;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
 
-.b4{
-    text-align: center;
+.b4 {
+  text-align: center;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
-.b5{
-    text-align: center;
+.b5 {
+  text-align: center;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
-.b6{
-    text-align: center;
+.b6 {
+  text-align: center;
   height: 90%;
   width: 15%;
   border: solid 2px chocolate;
 }
-.container2{
-border: 2px solid pink;
+.container2 {
+  border: 2px solid pink;
   width: 100%;
   height: 36rem;
-   border-bottom: 7%;
-   display: flex;
-   padding: 8px;
-   gap: 10px;
-   margin-top: 5rem;
+  border-bottom: 7%;
+  display: flex;
+  padding: 8px;
+  gap: 10px;
+  margin-top: 5rem;
 }
-.leftcont1{
-height: 100%;
-width: 35%;
+.leftcont1 {
+  height: 100%;
+  width: 35%;
 
-display: block;
-margin-left: 11rem;
+  display: block;
+  margin-left: 11rem;
 }
-.box1{
+.box1 {
   height: 60%;
   width: 100%;
   border: solid 2px sienna;
   margin-bottom: 1.5rem;
 }
-.box2{
-    height: 33%;
+.box2 {
+  height: 33%;
   width: 80%;
   border: solid 2px sienna;
   margin-left: 5rem;
 }
-.box3{
-    height: 49%;
-  width: 90%;
-  border: solid 2px sienna;
- 
-}
-.box4{
-    height: 49%;
+.box3 {
+  height: 49%;
   width: 90%;
   border: solid 2px sienna;
 }
-.rightcont1{
-height: 100%;
-width: 35%;
+.box4 {
+  height: 49%;
+  width: 90%;
+  border: solid 2px sienna;
+}
+.rightcont1 {
+  height: 100%;
+  width: 35%;
 
-display: block;
+  display: block;
 }
-.container3{
-border: 2px solid forestgreen;
-    width: 100%;
+.container3 {
+  border: 2px solid forestgreen;
+  width: 100%;
   height: 450px;
-   border-bottom: 7%;
-   display: block;
+  border-bottom: 7%;
+  display: block;
 }
-.top1{
-width: 100%;
-height: 20%;
-border: solid 2px firebrick;
-
+.top1 {
+  width: 100%;
+  height: 20%;
+  border: solid 2px firebrick;
 }
-.bottom1{
-width: 100%;
-height: 70%;
-border: solid 2px hotpink;
-display: flex;
-gap: 0.6rem;
-justify-content: center;
-padding-top: 1rem;
+.bottom1 {
+  width: 100%;
+  height: 70%;
+  border: solid 2px hotpink;
+  display: flex;
+  gap: 0.6rem;
+  justify-content: center;
+  padding-top: 1rem;
 }
-.c1{
-  
+.c1 {
   height: 90%;
   width: 21%;
   border: solid 2px blueviolet;
-
 }
-.c2{
+.c2 {
   height: 90%;
   width: 21%;
   border: solid 2px blueviolet;
-
 }
-.c3{
+.c3 {
   height: 90%;
   width: 21%;
   border: solid 2px blueviolet;
-
 }
-.c4{
+.c4 {
   height: 90%;
   width: 21%;
   border: solid 2px blueviolet;
-
 }
-.c5{
+.c5 {
   height: 90%;
   width: 21%;
   border: solid 2px blueviolet;
-
 }
-.container4{
-border: 2px solid khaki;
-    width: 100%;
+.container4 {
+  border: 2px solid khaki;
+  width: 100%;
   height: 250px;
-   border-bottom: 7%;
+  border-bottom: 7%;
 }
-.container5{
+.container5 {
   border: 2px solid blue;
-    width: 100%;
+  width: 100%;
   height: 250px;
-   border-bottom: 7%;
+  border-bottom: 7%;
+}
+
+.svxLand {
+  background-image: url(../../assets/image/bedlaying.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 34rem;
+  margin-top: 70px;
+  text-align: center;
+  padding: 10rem;
+  h2 {
+    color: white;
+    font-size: 2.5rem;
+  }
+  p {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: normal;
+  }
+}
+
+.SvxSec2 {
+  padding: 2rem;
+  text-align: center;
+}
+.bocc {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+.bocc1 {
+  background-image: url(../../assets/image/bedlaying.jpg);
+  background-size: cover;
+  height: 20rem;
+  width: 20rem;
+}
+
+.SvxSec3 {
+  display: flex;
+  justify-content: center;
+}
+
+.boc1 {
+ 
+  height: 20rem;
+  width: 100%;
+  
+ color: #69353f;
+ display: flex;
+ justify-content: center;
+ background-image: url(../../assets/image/five.jfif);
+
+}
+.float{
+   background-image: url(../../assets/image/openingimage.jpg);
+  background-size: cover;
+ box-shadow: 10px 10px #69353fc7;
+  height: 80%;
+  width: 40%;
+  margin-top: 1.5rem;
+  border-radius: .5rem;
+  border-radius: 0 .5rem .5rem 0;
 }
 /* --- responsiveness--- */
 @media (max-width: 1024px) {
   /* home */
-  .heroContent{
+  .heroContent {
     width: 80%;
     max-width: 600px;
   }
   /* footer */
-  .footer{
+  .footer {
     gap: 3rem;
     height: auto;
     flex-wrap: wrap;
   }
-  .form{
+  .form {
     width: 300px;
   }
-  .form input{
+  .form input {
     width: 250px;
   }
-  .form .sub{
+  .form .sub {
     font-size: 1.3rem;
   }
-  
 }
 @media (max-width: 768px) {
   /* home page */
-  .heroContent{
+  .heroContent {
     width: 60%;
   }
-  .desc{
+  .desc {
     justify-content: center;
-  div{
-    width: 90%;
+    div {
+      width: 90%;
+    }
   }
-  }
-  .wlcm{
+  .wlcm {
     flex-direction: column;
-  .side{
-    max-width: 600px;
+    .side {
+      max-width: 600px;
+    }
   }
-  }
-  .h1{
+  .h1 {
     padding: 1.5rem;
   }
-  .approach{
+  .approach {
     padding: 3rem;
     justify-content: center;
   }
   /* footer */
-  .footer{
+  .footer {
     flex-direction: column;
     gap: 2rem;
     height: auto;
     padding: 2rem 1.5rem;
   }
-  .form{
+  .form {
     width: 100%;
   }
-  .form input{
+  .form input {
     width: 100%;
     max-width: 300px;
   }
-  .form .sub{
+  .form .sub {
     margin-left: 0;
     display: block;
     left: 3px;
     font-size: 1.2rem;
   }
-  img{
+  img {
     margin-left: 0;
     max-width: 100%;
     height: 70px;
   }
-
 }
 @media (max-width: 480px) {
   /* home page */
-  .heroContent{
+  .heroContent {
     max-width: 250px;
     width: 70%;
-  h1{
-    font-size: 1.85rem;
+    h1 {
+      font-size: 1.85rem;
+    }
   }
-  }
-  .desc{
+  .desc {
     flex-direction: column;
   }
-  .imgCon{
+  .imgCon {
     flex-direction: column;
     padding: 1.8rem;
   }
-  .approach{
+  .approach {
     padding: 1.1rem;
     gap: 1.3rem;
   }
   /* footer */
-  .footer{
+  .footer {
     padding: 1.5rem 1rem;
   }
-  .form h2{
+  .form h2 {
     font-size: 1.2rem;
   }
-  .form input{
+  .form input {
     max-width: 100%;
   }
-  .sub{
+  .sub {
     font-size: 1.1rem;
   }
 }
