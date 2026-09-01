@@ -328,6 +328,8 @@
   background-color: #69353f;
   color: white;
   display: block;
+  padding-bottom: 1rem;
+  padding: 1.3rem;
 }
 .ctop {
   padding-top: 1.5rem;
@@ -391,8 +393,9 @@
   border-bottom: 7%;
   display: flex;
   padding: 8px;
+  padding-top: 1.6rem;
   gap: 10px;
-  margin-top: 5rem;
+  margin-top: rem;
 }
 .leftcont1 {
   height: 100%;
@@ -404,24 +407,47 @@
 .box1 {
   height: 60%;
   width: 100%;
-  border: solid 2px sienna;
-  margin-bottom: 1.5rem;
+  
+  margin-bottom: 1rem;
+  background-image: url(../../assets/image/hotel1.jpeg);
+  background-size: cover;
 }
 .box2 {
   height: 33%;
   width: 80%;
-  border: solid 2px sienna;
+  
   margin-left: 5rem;
+  background-size: cover;
+  background-image: url(../../assets/image/giftcard.png);
+  
 }
 .box3 {
-  height: 49%;
+  height: 48%;
   width: 90%;
-  border: solid 2px sienna;
+
+ padding: 1rem;
+
+}
+.bh3{
+  color: #69353f;
+}
+.bh1{
+margin-bottom: 2%;
+}
+.bp{
+margin-bottom: 2%;
+}
+
+.spann{
+  color: #69353f;
 }
 .box4 {
-  height: 49%;
+  background-image: url(../../assets/image/meal1.jpeg);
+  height: 48%;
   width: 90%;
-  border: solid 2px sienna;
+  
+  background-size: cover;
+  
 }
 .rightcont1 {
   height: 100%;
@@ -435,39 +461,51 @@
   height: 450px;
   border-bottom: 7%;
   display: block;
+  padding: 1rem;
 }
 .top1 {
   width: 100%;
   height: 20%;
-  border: solid 2px firebrick;
+
+  padding: 1rem;
 }
 .bottom1 {
+  
   width: 100%;
   height: 70%;
-  border: solid 2px hotpink;
   display: flex;
   gap: 0.6rem;
   justify-content: center;
-  padding-top: 1rem;
+  padding-top: 4rem;
+  border: solid 2px saddlebrown;
 }
 .c1 {
   height: 90%;
-  width: 21%;
+  width: 22%;
   border: solid 2px blueviolet;
+  
+}
+.boxx{
+  height: 20%;
+  width: 20%;
+  padding: 1rem;
+  border: solid 2px darkblue;
+ position: absolute;
+  margin-left: 2rem;
 }
 .c2 {
   height: 90%;
-  width: 21%;
+  width: 22%;
   border: solid 2px blueviolet;
 }
 .c3 {
   height: 90%;
-  width: 21%;
+  width: 22%;
   border: solid 2px blueviolet;
 }
 .c4 {
   height: 90%;
-  width: 21%;
+  width: 22%;
   border: solid 2px blueviolet;
 }
 .c5 {

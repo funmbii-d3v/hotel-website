@@ -48,11 +48,18 @@ function About() {
     
       <div className="container2">
         <div className="leftcont1">
-          <div className="box1"></div>
+          <div className="box1">
+            <img src="" alt="" />
+          </div>
           <div className="box2"></div>
         </div>
         <div className="rightcont1">
-          <div className="box3"></div>
+          <div className="box3">
+            <h3 className='bh3' >Brief On L'Hotel</h3>
+            <h1 className='bh1'>Enjoy A Luxury Experience</h1>
+            <p className='bp'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur vitae incidunt asp</p>
+            <h5 className='bh5'> consectetur adipisicing elit. <span className='spann'>sit  adipisicing elit.</span></h5>
+          </div>
           <div className="box4"></div>
         </div>
       </div>
@@ -62,7 +69,9 @@ function About() {
           <h1>Why Choose Us</h1>
         </div>
         <div className="bottom1">
-          <div className="c1"></div>
+          <div className="c1">
+            <div className="boxx"></div>
+          </div>
           <div className="c2"></div>
           <div className="c3"></div>
           <div className="c4"></div>
