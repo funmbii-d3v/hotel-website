@@ -29,9 +29,9 @@ function Services() {
 
       <section className="SvxSec3">
        <div className="boc1">
-        <div className="float">
-          
-        </div>
+        <h1>Featured Experience</h1>
+        <h2>Relax. Recharge. Reconnect.</h2>
+        <p>Your stay should be more than simply a place to sleep. Take time to enjoy the facilities, discover new experiences, and make the most of every moment at L'Hotel.</p>
        </div>
       </section>
     </React.Fragment>
