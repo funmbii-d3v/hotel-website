@@ -70,11 +70,31 @@ function About() {
         </div>
         <div className="bottom1">
           <div className="c1">
-            <div className="boxx"></div>
+            <div className="boxx">
+              
+            </div>
+            <h2>Fast & Easy Booking</h2>
+              <h4>Seamless</h4>
+              <p>Instant free-text or cloud booking <br/>  NO Stress Or Labour On Cloud Servers <br/> Get Your form from front to back</p>
           </div>
-          <div className="c2"></div>
-          <div className="c3"></div>
-          <div className="c4"></div>
+          <div className="c2">
+            <div className="boxx1"></div>
+             <h2>Fast & Easy Booking</h2>
+              <h4>Seamless</h4>
+              <p>Instant free-text or cloud booking <br/>  NO Stress Or Labour On Cloud Servers <br/> Get Your form from front to back</p>
+          </div>
+          <div className="c3">
+            <div className="boxx2"></div>
+             <h2>Fast & Easy Booking</h2>
+              <h4>Seamless</h4>
+              <p>Instant free-text or cloud booking <br/>  NO Stress Or Labour On Cloud Servers <br/> Get Your form from front to back</p>
+          </div>
+          <div className="c4">
+            <div className="boxx3"></div>
+             <h2>Fast & Easy Booking</h2>
+              <h4>Seamless</h4>
+              <p>Instant free-text or cloud booking <br/>  NO Stress Or Labour On Cloud Servers <br/> Get Your form from front to back</p>
+          </div>
         </div>
       </div>
       <div className="container4"></div>
