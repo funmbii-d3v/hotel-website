@@ -5,7 +5,7 @@
   margin-top: 5rem;
 }
 
-/* HERO */
+
 
 .bookingHero {
   height: 350px;
@@ -28,7 +28,7 @@
 }
 
 
-/* MAIN CONTAINER */
+
 
 .bookingContainer {
   width: 90%;
@@ -41,7 +41,6 @@
 }
 
 
-/* SELECTED ROOM */
 
 .selectedRoom {
   background: white;
@@ -84,7 +83,6 @@
 }
 
 
-/* BOOKING FORM */
 
 .bookingForm {
   background: white;
@@ -100,7 +98,7 @@
 }
 
 
-/* FORM GROUP */
+
 
 .formGroup {
   display: flex;
@@ -130,7 +128,6 @@
 }
 
 
-/* BUTTON */
 
 .bookingForm button {
   width: 100%;
@@ -148,7 +145,7 @@
 }
 
 
-/* NO ROOM */
+
 
 .bookingPage > h2,
 .bookingPage > p,
@@ -157,7 +154,7 @@
 }
 
 
-/* MOBILE */
+
 
 @media (max-width: 800px) {
 
