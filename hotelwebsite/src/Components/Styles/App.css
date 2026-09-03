@@ -20,34 +20,36 @@
   background-color: transparent;
   transition: background-color 0.3s ease;
 }
+.NavBarItems.scrolled .NavList{
+  background-color: var(---color2);
+}
 .NavList {
   display: flex;
   justify-content: space-between;
   gap: 2rem;
   padding: 0.2rem 1rem;
   font-family: var(---font1);
-  /* position: fixed; */
-  width: 100vw;
-  /* z-index: 99; */
+  width: 100%;
   font-size: 1.3rem;
   position: fixed;
   top: 0;
   z-index: 999;
-  backdrop-filter: saturate(1.2) blur(10px);
-  background: #69353fe3;
 }
 .subNav {
   display: flex;
-  gap: 2px;
+  gap: 4px;
 }
 .NavName {
   margin-top: 0.8rem;
   text-decoration: none;
-  color: white;
+  color: var(---color1);
+&:hover{
+  color: black;
+}
 }
 .NavLink {
   text-decoration: none;
-  color: white;
+  color: var(---color1);
   margin-top: 1.5rem;
   font-weight: lighter;
   margin-right: 2.5rem;
@@ -67,7 +69,14 @@
     transform: scale(1.25);
   }
 }
-
+.ham{
+  color: var(---color1);
+  cursor: pointer;
+  font-size: 2rem;
+}
+.hamburger{
+  display: none;
+}
 /* home page */
 .heroPg {
   height: 90vh;
@@ -209,6 +218,128 @@
   height: 100%;
   background: rgba(0, 0, 0, 0.586);
   z-index: 1;
+}
+.roomcard{
+  background-color:var(---color2);
+  /* padding: .3rem .9rem; */
+  width: 200px;
+  height: 300px;
+  text-align: center;
+}
+.cardImg{
+  height: 150px;
+  width: 200px;
+}
+.roomCon{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5rem;
+  margin: 4rem 0 4rem 6rem;
+}
+.roomTxt{
+  margin: 10px 0;
+.pgraph{
+  font-size:x-small;
+  color: black;
+}
+p{
+  color: var(---color1);
+}
+}
+.detailsBtn{
+  border: 1.5px solid var(---color1);
+  background-color: transparent;
+  padding: .5rem;
+  border-radius: .5rem;
+ cursor: pointer;
+  margin-top: 10px;
+&:hover{
+  transform: scale(1.25);
+  color: white;
+  background-color: var(---color1);
+}
+}
+/* roomdetails page */
+.deets{
+  background-color: var(---color2);
+  text-align: center;
+  padding: 7rem 2rem;
+h4{
+  text-transform: uppercase;
+  color: var(---color1);
+}
+}
+.detailsCon{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  background-color: blanchedalmond;
+  margin: 1.5rem 7.5rem;
+  width: 80%;
+}
+.deTails{
+  width: 500px;
+  padding: 2.1rem;
+h1{
+  margin: 10px 0;
+}
+.p{
+  margin-bottom: 10px;
+}
+}
+.green{
+  background-color: green;
+  padding: .3rem .6rem;
+  border-radius: .8rem;
+  height: fit-content;
+  font-size: small;
+  margin-top: 22px;
+  margin-left: 10px;
+  color: white;
+  cursor:default;
+}
+.deetsAbt{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+.deetsIcon{
+  font-size: 1.5rem;
+  color: var(---color1);
+  margin-right: 10px;
+}
+.detailsImg{
+  width: 500px;
+  height: 400px;
+  position: relative;
+}
+.bookBtn{
+  background-color: var(---color1);
+  color: white;
+  padding: .8rem;
+  border: none;
+  margin: 20px 25px 10px 0;
+  cursor: pointer;
+}
+.deetLink{
+  color: var(---color1);
+  text-decoration: none;
+  font-weight:bolder ;
+}
+.deetsTxt{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 100%;
+  padding: 2rem 7.5rem;
+  margin: 1.5rem 0;
+  gap: 50px 0;
+  background-color: blanchedalmond;
+}
+.Txticon{
+  background: transparent;
+  color: var(---color1);
+  font-size: xx-large;
+  margin-right: 15px;
 }
 /* footer */
 .footer {
@@ -760,6 +891,35 @@ text-align: center;
   }
 }
 @media (max-width: 768px) {
+  /* navbar */
+  .hamburger{
+    display: flex;
+    align-items: center;
+  }
+  .subNav{
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(---color2);
+    gap: 0;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    transition: max-height 0.3s ease;
+  }
+  .subNav.show{
+    max-height: 450px;
+    padding: 1rem 1.5rem;
+  }
+  .NavLink{
+    margin: 0.75rem 0;
+  }
+  .navBut{
+    margin: 0.5rem 0 1rem 0;
+  }
   /* home page */
   .heroContent {
     width: 60%;
@@ -782,6 +942,19 @@ text-align: center;
   .approach {
     padding: 3rem;
     justify-content: center;
+  }
+  /* rooms details */
+  .detailsCon{
+    margin: 30px auto;
+  }
+  .detailsImg{
+    width: 620px;
+  }
+  .deetsTxt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 3rem;
   }
   /* footer */
   .footer {
@@ -828,6 +1001,9 @@ text-align: center;
   .approach {
     padding: 1.1rem;
     gap: 1.3rem;
+  }
+    .lcT iframe{
+    width: 90%;
   }
   /* footer */
   .footer {

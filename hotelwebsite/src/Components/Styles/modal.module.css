@@ -4,7 +4,7 @@
 }
 .modals {
 	position: fixed;
-	z-index: 46;
+	z-index: 999;
 	width: 100vw;
 	height: 100vh;
 	background-color: rgba(0, 0, 0, 0.588);

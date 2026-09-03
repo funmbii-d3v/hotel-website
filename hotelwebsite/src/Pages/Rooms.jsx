@@ -1,7 +1,11 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
+import React, {useState} from 'react'
+import RoomsCard from '../Components/RoomsCard'
 import img1 from "../assets/image/two.jfif"
-const Rooms = (props) => {
+import { roomInfo } from '../data/roomsInfo'
+const Rooms = () => {
+  const[search, setSearch]= useState('')
+  const[price, setPrice]= useState('')
+  const[type, setType]= useState('')
   return (
     <div>
       <main>
@@ -13,19 +17,26 @@ const Rooms = (props) => {
         </div>
       </div>
       <section>
-        <div className='inputItems'>
-          <input type="search" />
-          <input type="image" src="" alt="" />
+        <div className="inputTags">
+            <input type="search" placeholder='search'/>
+            <select name="field" id="Type">
+              <option value="">Exclusive</option>
+              <option value="">Deluxe</option>
+              <option value="">Standard</option>
+            </select>
+            <select name="field" id="Price">
+              <option value="">Highest-Lowest</option>
+              <option value="">Lowest-Highest</option>
+            </select>
         </div>
       </section>
-      <section className={props.style}>
-        <div className={props.style}>
-          <h4>{props.roomTitle}</h4>
-          <p>{props.about}</p>
-          <p>{props.price}</p>
-          <Link >{props.link}
-          <button>View Details</button></Link>
-        </div>
+      <section>
+        <div className='roomCon'>{roomInfo.map((room)=>{
+          return(
+            <RoomsCard key={room.id} {...room}/>
+          )
+        })}
+       </div>
       </section>
       </main>
     </div>

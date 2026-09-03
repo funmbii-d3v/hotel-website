@@ -4,6 +4,7 @@ import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer.jsx'
 import Home from "../Pages/Home.jsx"
 import Rooms from "../Pages/Rooms.jsx"
+import RoomsDetails from '../Pages/RoomsDetails.jsx'
 import Services from '../Pages/Services.jsx'
 import About from '../Pages/About.jsx'
 import Booking from '../Pages/Booking.jsx'
@@ -16,6 +17,7 @@ const PageRoute = () => {
         <Route path="/about" element={<About/>} />
         <Route path="/services" element={<Services/>} />
         <Route path="/rooms" element={<Rooms/>} />
+        <Route path="/rooms/:id" element={<RoomsDetails />} />
         <Route path="/booking" element={<Booking/>} />
       </Routes>
       <Footer />

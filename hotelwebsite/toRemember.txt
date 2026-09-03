@@ -1,0 +1,69 @@
+import { useState } from 'react';
+import RoomCard from './RoomCard'; // Your child component
+
+function Rooms() {
+  // 1. Your original room data
+  const [roomsList] = useState([
+    { id: 1, name: 'Deluxe Suite', price: 250, status: 'Available' },
+    { id: 2, name: 'Standard Room', price: 100, status: 'Booked' },
+    { id: 3, name: 'Penthouse', price: 600, status: 'Available' },
+    { id: 4, name: 'Economy Room', price: 75, status: 'Available' }
+  ]);
+
+  // 2. State to track user search input and price filter
+  const [searchTerm, setSearchTerm] = useState('');
+  const [maxPrice, setMaxPrice] = useState('');
+
+  // 3. Filtering Logic
+  const filteredRooms = roomsList.filter((room) => {
+    // Check if room name matches search input (case-insensitive)
+    const matchesName = room.name.toLowerCase().includes(searchTerm.toLowerCase());
+    
+    // Check if room price is less than or equal to selected max price (if provided)
+    const matchesPrice = maxPrice === '' || room.price <= Number(maxPrice);
+
+    return matchesName && matchesPrice;
+  });
+
+  return (
+    <div className="rooms-page" style={{ padding: '20px' }}>
+      <h1>Available Rooms</h1>
+
+      {/* Search and Filter Controls */}
+      <div style={{ marginBottom: '20px', display: 'flex', gap: '15px' }}>
+        {/* Search by Name Input */}
+        <input 
+          type="text" 
+          placeholder="Search by room name..." 
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          style={{ padding: '8px' }}
+        />
+
+        {/* Filter by Max Price Input */}
+        <input 
+          type="number" 
+          placeholder="Max price ($)..." 
+          value={maxPrice}
+          onChange={(e) => setMaxPrice(e.target.value)}
+          style={{ padding: '8px' }}
+        />
+      </div>
+
+      {/* Render the filtered list */}
+      <div>
+        {filteredRooms.length > 0 ? (
+          filteredRooms.map((room) => (
+            <RoomCard key={room.id} room={room} />
+          ))
+        ) : (
+          <p>No rooms found matching your criteria.</p>
+        )}
+      </div>
+    </div>
+  );
+}
+
+export default Rooms;
+
+
