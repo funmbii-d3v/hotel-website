@@ -32,7 +32,7 @@ export const roomInfo = [
     image: img3,
     roomName: "Exclusive Suite",
     about:
-      "Elegantly exclusive with seperate living area and premium features.",
+      "Elegantly exclusive with seperate living area and premium features and amenities.",
     price: "155,000.00",
   },
   {
@@ -54,7 +54,7 @@ export const roomInfo = [
     id: 6,
     image: img6,
     roomName: "Private Exclusive Suite",
-    about: "Ultimate privacy with a private verandah and service.",
+    about: "Ultimate privacy with a private verandah and service, perfect for you.",
     price: "350,000.00",
   },
   {
@@ -68,7 +68,7 @@ export const roomInfo = [
     id: 8,
     image: img8,
     roomName: "Exclusive Deluxe",
-    about: "Grab a perfect space with a double space for couples. ",
+    about: "Grab a perfect space with a double space for couples, and friends.",
     price: "311,200.00",
   },
   {
