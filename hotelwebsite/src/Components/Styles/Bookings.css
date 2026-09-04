@@ -1,0 +1,181 @@
+.bookingPage {
+  background: #f8f5f3;
+  min-height: 100vh;
+  padding-bottom: 80px;
+  margin-top: 5rem;
+}
+
+
+
+.bookingHero {
+  height: 350px;
+  background: #69353f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.bookingHero h1 {
+  font-size: 55px;
+  margin: 0 0 15px;
+}
+
+.bookingHero p {
+  font-size: 18px;
+  margin: 0;
+}
+
+
+
+
+.bookingContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 60px auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+
+
+.selectedRoom {
+  background: white;
+  padding: 25px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.selectedRoom img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.selectedRoom div {
+  padding: 20px 5px;
+}
+
+.selectedRoom div > p:first-child {
+  color: #69353f;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.selectedRoom h2 {
+  font-size: 30px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.selectedRoom p {
+  line-height: 1.7;
+  color: #666;
+}
+
+.selectedRoom h3 {
+  color: #69353f;
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+
+
+.bookingForm {
+  background: white;
+  padding: 35px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.bookingForm h2 {
+  color: #69353f;
+  font-size: 30px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+
+
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 22px;
+}
+
+.formGroup label {
+  font-size: 15px;
+  margin-bottom: 8px;
+  color: #333;
+  font-weight: 600;
+}
+
+.formGroup input,
+.formGroup select {
+  padding: 14px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+.formGroup input:focus,
+.formGroup select:focus {
+  border-color: #69353f;
+}
+
+
+
+.bookingForm button {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  background: #69353f;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.bookingForm button:hover {
+  background: #542832;
+}
+
+
+
+
+.bookingPage > h2,
+.bookingPage > p,
+.bookingPage > a {
+  text-align: center;
+}
+
+
+
+
+@media (max-width: 800px) {
+
+  .bookingHero {
+    height: 280px;
+  }
+
+  .bookingHero h1 {
+    font-size: 40px;
+  }
+
+  .bookingContainer {
+    grid-template-columns: 1fr;
+    width: 92%;
+  }
+
+  .selectedRoom img {
+    height: 280px;
+  }
+
+  .bookingForm {
+    padding: 25px;
+  }
+}
