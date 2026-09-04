@@ -1,6 +1,5 @@
-
-
 import React from "react";
+import { Link } from "react-router-dom";
 import {
   FaSpa,
   FaUtensils,
@@ -18,8 +17,6 @@ import dinnerImg from "../assets/image/dinner.jpeg";
 import poolImg from "../assets/image/pool.jpeg";
 import hotelImg from "../assets/image/Dream.jpeg";
 import openingImg from "../assets/image/openingimage.jpg";
-
-
 
 const Services = () => {
   const services = [
@@ -67,12 +64,9 @@ const Services = () => {
 
   return (
     <main className="servicesPage">
-
-      {/* HERO */}
-      <section className="servicesHero">
-        <img src={hotelImg} alt="L'Hòtel Luxury Resort" />
-
-        <div className="servicesHeroOverlay">
+      <section className="servicesHero hero">
+        <img src={hotelImg} alt="L'Hòtel Luxury Resort" className="heroPg"/>
+        <div className="servicesHeroOverlay heroContent">
           <p>EXPERIENCE L'HÒTEL</p>
           <h1>Our Services</h1>
           <span>
@@ -83,17 +77,14 @@ const Services = () => {
         </div>
       </section>
 
-      {/* INTRO */}
       <section className="servicesIntro">
         <div className="servicesIntroText">
           <p className="servicesTitle">OUR SERVICES</p>
-
           <h2>
             Comfort is in the
             <br />
             <span>little things.</span>
           </h2>
-
           <p className="introDescription">
             At L'Hòtel, we believe a great stay is about more than
             beautiful rooms. From the moment you arrive, our team is
@@ -101,144 +92,75 @@ const Services = () => {
             unforgettable.
           </p>
         </div>
+        <img src={poolImg} className="serviceImg"/>
       </section>
-
-      {/* FEATURED SERVICES */}
       <section className="featuredServices">
-
-        <div className="featuredImage">
-          <img src={spaImg} alt="Spa at L'Hòtel" />
+        <div className="featuredImage hero">
+          <img src={spaImg} alt="Spa at L'Hòtel" className="heroPg"/>
         </div>
-
         <div className="featuredText">
-          <p className="servicesTitle">RELAX & UNWIND</p>
-
+          <h1>RELAX & UNWIND</h1>
           <h2>
             Take some time
-            <br />
-            <span>for yourself.</span>
+            <span> for yourself.</span>
           </h2>
-
           <p>
             Step away from the busy city and enjoy a little time to
             yourself. Our spa and wellness services are designed to
             help you relax, recharge and feel completely at ease.
           </p>
-
-          <button className="serviceBtn">
+          <button className="serviceBtn btn1">
             Explore our spa <FaArrowRight />
           </button>
         </div>
-
       </section>
-
-   
       <section className="allServices">
-
-        <div className="serviceHeading">
+        <div className="servicesIntroText">
           <p className="servicesTitle">AT YOUR SERVICE</p>
-
           <h2>
             Made for your
-            <br />
-            <span>comfort.</span>
+            <span> comfort.</span>
           </h2>
-
           <p>
             Whatever brings you to L'Hòtel, we've got the details
             covered.
           </p>
         </div>
-
         <div className="servicesGrid">
-
           {services.map((service, index) => (
             <div className="serviceCard" key={index}>
-
               <div className="serviceIcon">
                 {service.icon}
               </div>
-
               <div className="serviceCardNumber">
                 0{index + 1}
               </div>
-
               <h3>{service.title}</h3>
-
               <p>{service.text}</p>
-
-              {/* <button className="serviceLink">
-                Learn more <FaArrowRight />
-              </button> */}
-
             </div>
           ))}
-
         </div>
-
       </section>
-
-      {/* DINING / POOL SECTION */}
-      <section className="serviceExperiences">
-
+      <section className="serviceS">
         <div
-          className="experienceBox"
-          style={{ backgroundImage: `url(${dinnerImg})` }}
-        >
-          <div>
-            <FaUtensils />
-            <h2>Good food.</h2>
-            <p>
-              Delicious dining and memorable moments around the table.
-            </p>
-          </div>
-        </div>
-
-        <div
-          className="experienceBox"
-          style={{ backgroundImage: `url(${poolImg})` }}
-        >
-          <div>
-            <FaPersonSwimming />
-            <h2>Take a dip.</h2>
-            <p>
-              Slow down, cool off and enjoy a little sunshine.
-            </p>
-          </div>
-        </div>
-
-      </section>
-
-      {/* CTA */}
-      <section className="serviceCTA">
-
-        <div
-          className="serviceCTABg"
+          className="serviceBg"
           style={{ backgroundImage: `url(${openingImg})` }}
         />
-
-        <div className="serviceCTAContent">
+        <div className="service">
           <p>YOUR STAY STARTS HERE</p>
-
           <h2>
             Come for the
-            <br />
-            <span>experience.</span>
+            <span> experience.</span>
           </h2>
-
           <p className="ctaText">
             Whether you're visiting for business or simply getting
             away, L'Hòtel is ready to welcome you.
           </p>
-
-          <button className="ctaButton">
+          <Link to="/rooms" ><button className="ctaButton">
             Book Your Stay <FaArrowRight />
-          </button>
-          
+          </button></Link>
         </div>
-
       </section>
-
     </main>
   );
 };

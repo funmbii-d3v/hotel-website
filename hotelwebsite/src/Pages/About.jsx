@@ -1,6 +1,6 @@
 import React from "react";
 import { IoIosAlarm } from "react-icons/io";
-import { FaWifi } from "react-icons/fa";
+import { FaWifi, FaRegClock, FaCheck, FaWheelchair, FaBell, FaPaw } from "react-icons/fa";
 import { FaBath } from "react-icons/fa";
 import { FaSpa } from "react-icons/fa";
 import { GiCoffeeCup } from "react-icons/gi";
@@ -33,25 +33,25 @@ function About() {
               </h1>
               <h3>Alarm</h3>
             </div>
-            <div className="b2">
+            <div className="b1">
               <h1>
                 <FaWifi />
               </h1>
               <h3>Fast Wifi</h3>
             </div>
-            <div className="b3">
+            <div className="b1">
               <h1><FaBath /></h1>
               <h3>Bath</h3>
             </div>
-            <div className="b4">
+            <div className="b1">
               <h1><FaSpa /></h1>
               <h3>Spa</h3>
             </div>
-            <div className="b5">
+            <div className="b1">
               <h1><GiCoffeeCup /></h1>
               <h3>Coffee</h3>
             </div>
-            <div className="b6">
+            <div className="b1">
               <h1><FaHelmetSafety /></h1>
               <h3>Safe</h3>
             </div>
@@ -61,7 +61,6 @@ function About() {
         <div className="container2">
           <div className="leftcont1">
             <div className="box1">
-              <img src="" alt="" />
             </div>
             <div className="box2"></div>
           </div>
@@ -70,7 +69,6 @@ function About() {
               <h3 className="bh3">Brief On L'Hotel</h3>
               <h1 className="bh1">Enjoy A Luxury Experience</h1>
               <p className="bp">
-                {" "}
                 Experience an unmatched level of comfort and timeless charm. From thoughtfully appointed suites to exceptional hospitality, 
               </p>
               <h5 className="bh5">
@@ -97,23 +95,21 @@ function About() {
                 Cloud Servers <br /> Get Your form from front to back
               </p>
             </div>
-            <div className="c2">
+            <div className="c1">
               <div className="boxx1"><h1><MdOutlineBedroomParent /></h1></div>
               <h2>Room Booking</h2>
-              <h4>____</h4>
               <p>
                 Pick your ideal room, tap to reserve, and leave the logistics to us. Enjoy an entirely stress-free booking experience backed by ultra-reliable cloud servers.
               </p>
             </div>
-            <div className="c3">
+            <div className="c1">
               <div className="boxx2"><h1><IoLocation /></h1></div>
               <h2>Picked Best Location</h2>
-              <h4>____</h4>
               <p>
                 Pick the best spot on the map and let our cloud handle the rest—zero server maintenance, zero booking friction, 100% seamless hospitality.
               </p>
             </div>
-            <div className="c4">
+            <div className="c1">
               <div className="boxx3"><h1><MdOutlinePayment /></h1></div>
               <h2>Easy payment &</h2>
               <h4> Cancel</h4>
@@ -123,8 +119,64 @@ function About() {
             </div>
           </div>
         </div>
-        <div className="container4"></div>
-        <div className="container5"></div>
+        <div className="container4">
+      <h2 className="hotel-info-title">Hotel Information</h2>
+      <div className="hotel-info-grid">
+        <div className="hotel-info-col">
+          <div className="info-item">
+            <FaRegClock className="info-icon" />
+            <span>Check-in: 3:00 pm</span>
+          </div>
+          <div className="info-item">
+            <FaRegClock className="info-icon" />
+            <span>Check-out: 12:00 pm</span>
+          </div>
+          <div className="info-item">
+            <FaCheck className="info-icon" />
+            <span>Minimum Age to Check In 18</span>
+          </div>
+          <div className="info-item">
+            <FaWheelchair className="info-icon" />
+            <a href="#" className="info-link">See Accessibility Features</a>
+          </div>
+        </div>
+        <div className="hotel-info-col">
+          <div className="info-group">
+            <div className="info-item">
+              <FaBell className="info-icon" />
+              <span className="info-label">Front Desk</span>
+            </div>
+          </div>
+
+          <div className="info-group">
+            <div className="info-item">
+              <FaPaw className="info-icon" />
+              <span className="info-label">Pet Policy</span>
+            </div>
+            <div className="info-sub">
+              <p>Pets Not Allowed</p>
+              <p>N/A</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Column 3 */}
+        <div className="hotel-info-col">
+          <div className="info-group">
+            <div className="info-item">
+              {/* <FaSquareParking className="info-icon" /> */}
+              <span className="info-label">Parking</span>
+            </div>
+            <div className="info-sub">
+              <p>Complimentary On-Site Parking</p>
+              <p>Electric Car Charging Station</p>
+              <p>Additional Parking Information</p>
+              <p>N/A</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        </div>
       </div>
     </React.Fragment>
   );
