@@ -16,7 +16,7 @@ const Footer = () => {
             <button type="submit" className='sub'>→</button>
           </form>
           <p>By entering your email, you agree to receive email marketing from us at your email address and agree to the Terms and Privacy Policy.</p>
-          <img src={"/Assets/image/Logo.png"} alt="logo" height={80}/>
+          <img src={"/Assets/image/Logo.png"} alt="logo" height={80} className='footImg'/>
           <p>©2026 All Rights Reserved</p>
         </div>
         <div className='footLinks'>

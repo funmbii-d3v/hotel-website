@@ -1164,28 +1164,22 @@ margin-bottom: .3rem;
     font-size: 0.9rem;
   }
   /* rooms details */
-  .roomCon{
+  /* .roomCon{
     grid-template-columns: repeat(2, 1fr);
-  }
+  } */
   .detailsCon{
     margin: 30px auto;
   }
-  .detailsImg{
+  /* .detailsImg{
     width: 620px;
-  }
-  .deetsTxt{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 45px;
-    padding: 3rem;
-  }
+  } */
   /* footer */
-  .footer {
+  /* .footer {
     flex-direction: column;
     gap: 2rem;
     height: auto;
     padding: 2rem 1.5rem;
-  }
+  } */
   .form {
     width: 100%;
   }
@@ -1199,7 +1193,7 @@ margin-bottom: .3rem;
     left: 3px;
     font-size: 1.2rem;
   }
-  img {
+  .footimg {
     margin-left: 0;
     max-width: 100%;
     height: 70px;
@@ -1287,6 +1281,12 @@ margin-bottom: .3rem;
   }
   #Type, #Price{
     flex: 1;
+  }
+    .deetsTxt{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    padding: 3rem;
   }
   /* services */
     .serviceS {
