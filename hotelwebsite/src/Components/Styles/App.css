@@ -320,6 +320,7 @@ p{
   filter: brightness(70%);
   transform:scale(0.8);
 }
+}
 .roomcard {
   background-color: var(---color2);
   /* padding: .3rem .9rem; */
